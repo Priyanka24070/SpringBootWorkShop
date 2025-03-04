@@ -9,8 +9,8 @@ import java.util.List;
 @Service
 public class AddressBookService implements IAddressBookService {
 
-    private final List<Address> addressList = new ArrayList<>();
-    private Long idCounter = 1L; // Counter to assign unique IDs
+    private final List<Address> addressList = new ArrayList<>(); // ✅ Store addresses in memory
+    private Long idCounter = 1L; // ✅ Counter to generate unique IDs
 
     @Override
     public List<AddressDTO> getAllAddresses() {
